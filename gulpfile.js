@@ -17,5 +17,5 @@ gulp.task('test', [], function () {
 });
 
 gulp.task('watch', [], function () {
-    gulp.watch([path.lib, path.tests, 'test']);
+    gulp.watch([path.lib, path.tests], ['test']);
 });
